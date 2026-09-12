@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sanjit Kumar - Profile</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .card {
+            background-color: white;
+            width: 400px;
+            margin: 80px auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px gray;
+        }
+
+        .profile {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid green;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        h2 {
+            color: green;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <!-- Photo -->
+        <img src="photo.jpg" alt="Sanjit Kumar" class="profile">
+
+        <!-- Name -->
+        <h1>Sanjit Kumar</h1>
+
+        <!-- Course -->
+        <h2>BCA Student</h2>
+
+        <p>My Name is Sanjit Kumar.</p>
+        <p>I am a BCA Student.</p>
+        <p>I am learning HTML.</p>
+
+        <!-- Button -->
+        <button onclick="showMessage()">Click Me</button>
+
+        <p id="message"></p>
+
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+                "Hello Sanjit! Welcome to my website 😊";
+        }
+    </script>
+
+</body>
+</html>
